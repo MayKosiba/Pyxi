@@ -9,6 +9,6 @@ part 'user_posts_service.g.dart';
 abstract class UserPostService {
   factory UserPostService(Dio dio) = _UserPostService;
 
-  @GET('/nuser/{id}/posts')
-  Future<List<UserPostModel>> getUserPosts(@Path() String id) {}
+  @GET('/user/{id}/posts')
+  Future<List<UserPostModel>> getUserPosts(@Path() String id);
 }
